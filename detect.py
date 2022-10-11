@@ -184,7 +184,7 @@ def detect(save_img=False):
                                 #draw.text((x1, y1 + 10 + 40 * att_count), att_list[idx][1], (205, 55, 0),
                                           #font=font)  # coordinate，text，color，typeface
                                 # PIL图片转cv2 图片
-                                im0 = cv2.cvtColor(np.array(pilimg), cv2.COLOR_RGB2BGR)
+                                #im0 = cv2.cvtColor(np.array(pilimg), cv2.COLOR_RGB2BGR)
                                     # cv2.imshow('deepmar',im0)
                                     # cv2.waitKey()
                                     # cv2.destroyAllWindows()

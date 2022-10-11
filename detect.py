@@ -164,7 +164,7 @@ def detect(save_img=False):
                         pilimg = Image.fromarray(cv2img)
 
                         # print word on PIL img
-                        draw = ImageDraw.Draw(pilimg)  
+                        #draw = ImageDraw.Draw(pilimg)
 
                         bbox_img_convt_PIL = Image.fromarray(cv2.cvtColor(bbox_img,cv2.COLOR_BGR2RGB))
                         img_trans_conv_PIL = input_transform(bbox_img_convt_PIL)

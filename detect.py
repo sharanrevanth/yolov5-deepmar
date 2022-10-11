@@ -245,7 +245,7 @@ if __name__ == '__main__':
     parser.add_argument('--agnostic-nms', action='store_true', help='class-agnostic NMS')
     parser.add_argument('--augment', action='store_true', help='augmented inference')
     parser.add_argument("--deepsort", type=str, default="")
-    parser.add_argument('--attributes', type=str, default='deepmar/attribute_list_Chinese.pkl',
+    parser.add_argument('--attributes', type=str, default='deepmar/attribute_list.pickle',
                         help='Chinese attribute list path')
     opt = parser.parse_args()
     opt.img_size = check_img_size(opt.img_size)

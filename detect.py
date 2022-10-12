@@ -139,9 +139,9 @@ def detect(save_img=False):
                         center = (int((x1 + x2)/2), int((y1 + y2)/2))
                         trajectory[label].append(center)
                         for i in range(1,len(trajectory[label])):
-                            if trajectory[label][i-1]is None or trajectory[label][i]is None:
+                            if trajectory[label][i-1] is None or trajectory[label][i]is None:
                                 continue
-                            cv2.line(im0, trajectory[label][i - 1], trajectory[label][i], colors[int(label)%32], 2)
+                            cv2.line(im0, trajectory[label][i - 1], trajectory[label][i], colors[int(label)%32], 1)
                         bbox_img = im0[y1:y2,x1:x2]
                             # print(type(bbox_img))
                         shortname, extension = os.path.splitext(Path(p).name)
